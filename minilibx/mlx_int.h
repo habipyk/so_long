@@ -1,24 +1,9 @@
-//
-// mlx_int.h for minilibx
-//
-// ol@staff.42.fr
-//
-// include opengl needed before mlx_int.h
-//
-
-
 #define	MAX_EVENT	32
 #define MAX_PIXEL_NB	200000
 #define UNIQ_BPP	4
-
 #define FONT_WIDTH	10
-#define	FONT_HEIGHT	20
-
-
+#define FONT_HEIGHT	20
 typedef int (*func_t)();
-
-/* structs */
-
 typedef struct	glsl_info_s
 {
   GLuint	pixel_vshader;

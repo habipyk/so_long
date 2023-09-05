@@ -1,2 +1,2 @@
 all:
-	gcc mapcontrol.c getnextlinee/get_next_line.c getnextlinee/get_next_line_utils.c libmlx.a -framework OpenGL -framework AppKit -o solong
+	gcc main.c getmap.c getmap1.c checkmap.c mlx.c so_long_utils.c minilibx/libmlx.a get_next_line/get_next_line.a ft_printf/libftprintf.a -framework OpenGL -framework AppKit -o  solong
