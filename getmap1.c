@@ -6,7 +6,7 @@
 /*   By: hyalcink <hyalcink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 04:32:45 by hyalcink          #+#    #+#             */
-/*   Updated: 2023/09/05 19:15:36 by hyalcink         ###   ########.fr       */
+/*   Updated: 2023/09/07 01:16:02 by hyalcink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ void	checkmapname(t_mapinfo *map, char *ber)
 		ft_exit(map, 4);
 }
 
-void	rcheck(t_mapinfo *map)
+void	sizecheck(t_mapinfo *map)
 {
-	if (map->row == map->column || map->row > 22 || map->column > 40)
+	if (map->row > 22 || map->column > 40)
 	{
 		ft_exit(map, 6);
 	}

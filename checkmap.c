@@ -6,7 +6,7 @@
 /*   By: hyalcink <hyalcink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 04:41:49 by hyalcink          #+#    #+#             */
-/*   Updated: 2023/09/05 09:35:06 by hyalcink         ###   ########.fr       */
+/*   Updated: 2023/09/07 01:23:39 by hyalcink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	wallcheck(t_mapinfo *map)
 	i = 0;
 	while (i < map->column)
 	{
-		if (map->map[0][i] != '1' && map->map[map->row - 1][i] != '1')
+		if (map->map[0][i] != '1' || map->map[map->row - 1][i] != '1')
 		{
 			ft_exit(map, 8);
 		}
@@ -68,7 +68,7 @@ void	wallcheck(t_mapinfo *map)
 	i = 0;
 	while (i < map->row)
 	{
-		if (map->map[i][0] != '1' && map->map[i][map->column - 1] != '1')
+		if (map->map[i][0] != '1' || map->map[i][map->column - 1] != '1')
 			ft_exit(map, 8);
 		i++;
 	}
@@ -108,6 +108,8 @@ void	checkpath(t_mapinfo *map)
 	i = 0;
 	getplayer(map);
 	isvalid(map, map->py, map->px);
-	if (map->tmpcoin != 0 || map->reache != 1)
-		ft_exit(map, 6);
+	if (map->tmpcoin != 0)
+		ft_exit(map, 15);
+	else if(map->reache != 1)
+		ft_exit(map, 16);
 }

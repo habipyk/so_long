@@ -6,7 +6,7 @@
 /*   By: hyalcink <hyalcink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 03:46:44 by hyalcink          #+#    #+#             */
-/*   Updated: 2023/09/05 21:14:08 by hyalcink         ###   ########.fr       */
+/*   Updated: 2023/09/07 01:14:38 by hyalcink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	allocatemap(t_mapinfo *map);
 void	structinit(t_mapinfo *map);
 void	getplayer(t_mapinfo *map);
 void	checkmapname(t_mapinfo *map, char *ber);
-void	rcheck(t_mapinfo *map);
+void	sizecheck(t_mapinfo *map);
 void	isvalid(t_mapinfo *map, int x, int y);
 void	checkpath(t_mapinfo *map);
 void	ft_mlx(t_mapinfo *map);

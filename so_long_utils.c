@@ -6,7 +6,7 @@
 /*   By: hyalcink <hyalcink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 04:07:00 by hyalcink          #+#    #+#             */
-/*   Updated: 2023/09/05 09:42:55 by hyalcink         ###   ########.fr       */
+/*   Updated: 2023/09/07 01:31:40 by hyalcink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,12 +55,18 @@ int	ft_exit(t_mapinfo *map, int a)
 {
 	if(a == 1)
 	perror("dosya okunamadı");
-	if(a == 2)
+	else if(a == 2)
 	perror("yer açılamadı");
-	if(a == 3)
+	else if(a == 3)
 	perror("map okunamadı");
-	if(a == 6)
-	perror("map kare");
+	else if(a == 6)
+	perror("kocaman map");
+	else if(a == 15)
+	perror("coine ulaşılamıyor");
+	else if(a == 16)
+	perror("exita ulaşılamıyor");
+	else
+	printf("dostum hatalısın");
 	exit(0);
 	return (0);
 }

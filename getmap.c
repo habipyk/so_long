@@ -6,7 +6,7 @@
 /*   By: hyalcink <hyalcink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 04:17:43 by hyalcink          #+#    #+#             */
-/*   Updated: 2023/09/05 08:27:06 by hyalcink         ###   ########.fr       */
+/*   Updated: 2023/09/07 01:14:10 by hyalcink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void	start(t_mapinfo *map)
 	checkmapname(map, ".ber");
 	getrow(map);
 	getcolumn(map);
-	rcheck(map);
+	sizecheck(map);
 	allocatemap(map);
 	getmap(map);
 	checkmap(map);
